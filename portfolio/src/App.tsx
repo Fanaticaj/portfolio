@@ -13,13 +13,13 @@ const App: React.FC = () => {
           <h1 className="text-5xl font-semibold uppercase text-white">
             Anthony Grippi
           </h1>
-          <span className="font-mono text-sm font-extralight lowercase italic">
+          <span className="font-mono text-sm font-extralight lowercase italic text-gray-500">
             dev, architect, security aficionado
           </span>
         </header>
 
         {/* Carousel Section */}
-        <section className="w-full max-w-3xl">
+        <section className="max-h-7xl flex w-full max-w-7xl items-center justify-center">
           <SlideShow />
         </section>
       </main>

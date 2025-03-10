@@ -13,7 +13,7 @@ const GradientBackground: React.FC = () => {
       const xPercent = (clientX / innerWidth) * 100;
       const yPercent = (clientY / innerHeight) * 100;
 
-      gradientRef.current.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(255, 255, 255, 0.1), rgba(100, 0, 255, 0.2), rgba(0, 0, 0, 0.2))`;
+      gradientRef.current.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(255, 0, 255, 0.2), rgba(100, 0, 255, 0.2), rgba(0, 0, 0, 0.2))`;
     };
 
     window.addEventListener("mousemove", handleMouseMove);

@@ -16,6 +16,9 @@ const App: React.FC = () => {
           <span className="font-mono text-sm font-extralight lowercase italic text-gray-500">
             dev, architect, security aficionado
           </span>
+          <h2 className="text-5xl font-light text-gray-300 italic uppercase">
+            Why You're Here
+          </h2>
         </header>
 
         {/* Carousel Section */}

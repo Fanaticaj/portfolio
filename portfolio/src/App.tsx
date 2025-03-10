@@ -1,5 +1,6 @@
 import GradientBackground from "./components/GradientBackground";
 import SlideShow from "./components/SlideShow";
+import Who from "./pages/Who";
 
 const App: React.FC = () => {
   return (
@@ -31,10 +32,10 @@ const App: React.FC = () => {
       <footer className="absolute bottom-10 left-1/2 -translate-x-1/2 transform text-center text-white">
         <div id="carousel-links" className="flex gap-6">
           {/* These links should update dynamically when the user interacts with the carousel */}
-          <a href="/who" className="underline">
+          <a href="/Who" className="underline">
             Who I Am
           </a>
-          <a href="/what" className="underline">
+          <a href="/What.tsx" className="underline">
             What I’ve Done
           </a>
           <a href="/where" className="underline">

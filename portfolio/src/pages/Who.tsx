@@ -1,6 +1,6 @@
-import React from "react";
 import { Card } from "flowbite-react";
 import GradientBackground from "../components/GradientBackground";
+import FooterNav from "../components/FooterNav";
 
 const Who = () => {
   return (
@@ -10,7 +10,7 @@ const Who = () => {
         {/* Profile Photo Section */}
         <div className="w-full md:w-1/3 flex justify-center">
           <img 
-            src="/path-to-your-photo.jpg" 
+            src="../photo.jpg" 
             alt="Anthony Grippi" 
             className="w-64 h-64 object-cover rounded-full border-4 border-blue-400 shadow-lg" 
           />
@@ -69,6 +69,7 @@ const Who = () => {
           </Card>
         </div>
       </div>
+      <FooterNav />
     </div>
   );
 };

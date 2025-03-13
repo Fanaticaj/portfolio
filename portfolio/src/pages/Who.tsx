@@ -4,8 +4,8 @@ import FooterNav from "../components/FooterNav";
 
 const Who = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
-      <GradientBackground />
+      <div className="relative min-h-screen flex flex-col items-center bg-gray-900 text-white overflow-y-auto">
+<GradientBackground />
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center gap-8">
         {/* Profile Photo Section */}
         <div className="w-full md:w-1/3 flex justify-center">

@@ -5,10 +5,12 @@ export interface CarouselItemProps {
 }
 
 const CarouselItem = ({Comp}: CarouselItemProps) => {
-  return (<div className="overflow-y-hidden">
-    {Comp}
-  </div>
+  return (
+    <div className="overflow-y-auto max-h-full">
+      {Comp}
+    </div>
   );
 }
+
 
 export default CarouselItem;

@@ -8,7 +8,7 @@ export function SlideShow() {
   return (
     <div className="h-[35rem] w-[80rem]">
       <Carousel slide={false}>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white overflow-y-scroll">
+      <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white overflow-y-auto max-h-[35rem]">
           <CarouselItem Comp={<Who />} />
         </div>
         <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">

@@ -69,7 +69,7 @@ const Who = () => {
           </Card>
         </div>
       </div>
-      <FooterNav />
+      {location.pathname === "/who" ? (<FooterNav />) : null}
     </div>
   );
 };

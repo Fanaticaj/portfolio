@@ -5,7 +5,7 @@ export interface CarouselItemProps {
 }
 
 const CarouselItem = ({Comp}: CarouselItemProps) => {
-  return (<div className="">
+  return (<div className="overflow-y-hidden">
     {Comp}
   </div>
   );

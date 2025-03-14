@@ -1,17 +1,19 @@
-import React from 'react';
-import '../styles/CarouselItem.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export interface CarouselItemProps {
   Comp: React.ReactNode;
+  to: string; // Path to navigate
 }
 
-const CarouselItem = ({Comp}: CarouselItemProps) => {
+const CarouselItem = ({ Comp, to }: CarouselItemProps) => {
   return (
-    <div className="overflow-y-auto max-h-full scrollbar-hidden">
-      {Comp}
-    </div>
+    <Link to={to} className="block w-full h-full cursor-pointer">
+      <div className="overflow-y-auto max-h-full">
+        {Comp}
+      </div>
+    </Link>
   );
-}
-
+};
 
 export default CarouselItem;

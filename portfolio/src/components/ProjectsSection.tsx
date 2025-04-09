@@ -24,6 +24,13 @@ const ProjectsSection = () => {
         "A custom-built FTP server and client application implemented in Python, featuring user authentication, file transfer protocols, and real-time communication over sockets. Demonstrates a strong grasp of networking principles and low-level protocol design.",
       link: "https://github.com/Fanaticaj/ftp-server-client",
     },
+    {
+        title: "Q-Learning Blackjack AI",
+        time: "December 2024",
+        description:
+          "A Python application that learns to play Traditional Blackjack, Blackjack Switch, Spanish Blackjack, and European Blackjack using Q-learning algorithms. This project showcases reinforcement learning techniques and the application of machine learning principles to develop a strategy for optimal gameplay.",
+        link: "https://github.com/Fanaticaj/ftp-server-client"
+    }
   ];
 
   return (

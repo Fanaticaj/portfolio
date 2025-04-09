@@ -2,6 +2,8 @@ import { Card } from "flowbite-react";
 import GradientBackground from "../components/GradientBackground";
 import FooterNav from "../components/FooterNav";
 import ProjectsSection from "../components/ProjectsSection";
+import ExperienceSection from "../components/ExperienceSection";
+
 
 
 const Who = () => {
@@ -36,29 +38,7 @@ const Who = () => {
                 software engineering and IT security.
               </p>
             </section>
-            <section className="mb-6">
-              <h3 className="text-xl font-semibold text-blue-300">
-                Experience
-              </h3>
-              <p className="text-gray-300">
-                <strong>Senior Developer / Architect, CRM Engineer</strong> -
-                Clarus IT Solutions (2021 - Present)
-              </p>
-              <ul className="list-disc pl-6 text-gray-300">
-                <li>
-                  Led a team of developers in CRM projects from inception to
-                  deployment.
-                </li>
-                <li>
-                  Designed and optimized workflow configurations across multiple
-                  environments.
-                </li>
-                <li>
-                  Implemented software solutions for enterprise clients across
-                  various industries.
-                </li>
-              </ul>
-            </section>
+            <ExperienceSection />
             <section className="mb-6">
               <h3 className="text-xl font-semibold text-blue-300">Education</h3>
               <ul className="text-gray-300">

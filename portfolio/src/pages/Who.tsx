@@ -3,6 +3,7 @@ import GradientBackground from "../components/GradientBackground";
 import FooterNav from "../components/FooterNav";
 import ProjectsSection from "../components/ProjectsSection";
 import ExperienceSection from "../components/ExperienceSection";
+import EducationSection from "../components/EducationSection";
 
 const Who = () => {
   return (
@@ -35,28 +36,7 @@ const Who = () => {
               </p>
             </section>
             <ExperienceSection />
-            <section className="mb-6">
-              <h3 className="text-xl font-semibold text-blue-300">Education</h3>
-              <ul className="text-gray-300">
-                <li>
-                  <strong>California State University Fullerton</strong> - B.S.
-                  in Computer Science, Cybersecurity (2022 - Present)
-                </li>
-                <li>
-                  <strong>Saddleback College</strong> - A.S. in Computer Science
-                  & A.A. in Liberal Studies (2019 - 2022)
-                </li>
-              </ul>
-            </section>
-            <section className="mb-6">
-              <h3 className="text-xl font-semibold text-blue-300">Skills</h3>
-              <ul className="list-disc pl-6 text-gray-300">
-                <li>Programming Languages: C++, Java, JavaScript, Python</li>
-                <li>Expertise in Dynamics 365 & IT Security</li>
-                <li>Cybersecurity & Capture the Flag (CTF) Challenges</li>
-                <li>Blueprint Game Development in Unreal Engine 4</li>
-              </ul>
-            </section>
+            <EducationSection />
             <ProjectsSection />
           </Card>
         </div>

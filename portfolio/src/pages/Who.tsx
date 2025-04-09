@@ -4,6 +4,7 @@ import FooterNav from "../components/FooterNav";
 import ProjectsSection from "../components/ProjectsSection";
 import ExperienceSection from "../components/ExperienceSection";
 import EducationSection from "../components/EducationSection";
+import SkillsSection from "../components/SkillsSection";
 
 const Who = () => {
   return (
@@ -37,6 +38,7 @@ const Who = () => {
             </section>
             <ExperienceSection />
             <EducationSection />
+            <SkillsSection />
             <ProjectsSection />
           </Card>
         </div>

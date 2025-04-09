@@ -18,7 +18,7 @@ const EducationSection = () => {
   return (
     <section className="mb-6">
       <h3 className="text-xl font-semibold text-blue-300 mb-4">Education</h3>
-      <Timeline>
+      <Timeline horizontal>
         {education.map((item) => (
           <EducationTimelineItem
             key={item.school}

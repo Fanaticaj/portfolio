@@ -17,10 +17,10 @@ type EducationProps = {
 const EducationTimelineItem = ({ school, degree, time }: EducationProps) => {
   return (
     <TimelineItem>
-      <TimelinePoint icon={IoIosSchool} />
+      <TimelinePoint icon={IoIosSchool} className="p-3"/>
       <TimelineContent>
         <TimelineTime>{time}</TimelineTime>
-        <TimelineTitle className="text-gray-300">{school}</TimelineTitle>
+        <TimelineTitle className="text-gray-300 font-bold p-2">{school}</TimelineTitle>
         <TimelineBody className="text-gray-50">
           <p className="text-gray-300">{degree}</p>
         </TimelineBody>

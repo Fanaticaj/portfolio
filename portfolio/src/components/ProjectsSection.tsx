@@ -34,9 +34,9 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="mb-6">
+    <section className="mb-6 space-y-10">
       <h3 className="text-xl font-semibold text-blue-300 mb-4">Projects</h3>
-      <Timeline>
+      <Timeline horizontal>
         {projects.map((project) => (
           <ProjectTimelineItem
             key={project.title}

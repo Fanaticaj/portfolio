@@ -13,7 +13,6 @@ const Who = () => {
     <div className="relative flex min-h-screen flex-col items-center overflow-y-auto bg-gray-900 text-white">
       <GradientBackground />
       <div className="container mx-auto flex flex-col items-center gap-8 px-6 py-12 md:flex-row">
-        {/* Information Card */}
         <div className="w-full">
           <Card className="border border-gray-700 bg-gray-800 shadow-lg">
             <Hero />

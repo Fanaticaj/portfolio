@@ -28,7 +28,7 @@ const ExperienceSection = () => {
   return (
     <section className="mb-6">
       <h3 className="text-xl font-semibold text-blue-300 mb-4">Experience</h3>
-      <Timeline>
+      <Timeline horizontal>
         {experience.map((item) => (
           <ExperienceTimelineItem
             key={item.title}

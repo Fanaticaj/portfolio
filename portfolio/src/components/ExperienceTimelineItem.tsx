@@ -18,10 +18,10 @@ type ExperienceProps = {
 const ExperienceTimelineItem = ({ title, company, time, bullets }: ExperienceProps) => {
   return (
     <TimelineItem>
-      <TimelinePoint icon={FaHammer} />
+      <TimelinePoint icon={FaHammer} className="p-3"/>
       <TimelineContent>
         <TimelineTime>{time}</TimelineTime>
-        <TimelineTitle className="text-gray-300">{title}</TimelineTitle>
+        <TimelineTitle className="text-gray-300 font-bold p-2">{title}</TimelineTitle>
         <TimelineBody className="text-gray-50">
           <p className="text-gray-300 font-medium mb-2">{company}</p>
           <ul className="list-disc pl-5 text-gray-300">

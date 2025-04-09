@@ -13,7 +13,16 @@ const ExperienceSection = () => {
         "Implemented software solutions for enterprise clients across various industries.",
       ],
     },
-    // Add more roles here as needed in the future
+    {
+      title: "Software Engineer Intern",
+      company: "Edwards Lifesciences",
+      time: "September 2024 – May 2025",
+      bullets: [
+        "Worked with the MCoE Team to create a system of applications to manage work orders for both internal and customer facing use.",
+        "Creatd both front-end and back-end components for the application suite.",
+        "Developed reports and dashboards for data visualization and analysis for team leaders",
+      ],
+    }
   ];
 
   return (

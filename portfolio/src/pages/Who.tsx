@@ -4,25 +4,21 @@ import FooterNav from "../components/FooterNav";
 import ProjectsSection from "../components/ProjectsSection";
 import ExperienceSection from "../components/ExperienceSection";
 
-
-
 const Who = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-y-auto bg-gray-900 text-white">
       <GradientBackground />
       <div className="container mx-auto flex flex-col items-center gap-8 px-6 py-12 md:flex-row">
-        {/* Profile Photo Section */}
-        <div className="flex w-full justify-center md:w-1/3">
-          <img
-            src="../photo.jpg"
-            alt="Anthony Grippi"
-            className="h-64 w-64 rounded-full border-4 border-blue-400 object-cover shadow-lg"
-          />
-        </div>
-
         {/* Information Card */}
-        <div className="w-full md:w-2/3">
+        <div className="w-full">
           <Card className="border border-gray-700 bg-gray-800 shadow-lg">
+            <div className="flex w-full justify-center">
+              <img
+                src="../photo.jpg"
+                alt="Anthony Grippi"
+                className="h-64 w-64 rounded-full border-4 border-blue-400 object-cover shadow-lg"
+              />
+            </div>
             <h2 className="text-center text-3xl font-bold text-blue-400">
               Anthony Grippi
             </h2>

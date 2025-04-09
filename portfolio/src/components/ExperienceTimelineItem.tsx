@@ -1,4 +1,4 @@
-import { HiCalendar } from "react-icons/hi";
+import { FaHammer } from "react-icons/fa6";
 import {
   TimelineItem,
   TimelinePoint,
@@ -18,11 +18,11 @@ type ExperienceProps = {
 const ExperienceTimelineItem = ({ title, company, time, bullets }: ExperienceProps) => {
   return (
     <TimelineItem>
-      <TimelinePoint icon={HiCalendar} />
+      <TimelinePoint icon={FaHammer} />
       <TimelineContent>
         <TimelineTime>{time}</TimelineTime>
-        <TimelineTitle>{title}</TimelineTitle>
-        <TimelineBody>
+        <TimelineTitle className="text-gray-300">{title}</TimelineTitle>
+        <TimelineBody className="text-gray-50">
           <p className="text-gray-300 font-medium mb-2">{company}</p>
           <ul className="list-disc pl-5 text-gray-300">
             {bullets.map((point, index) => (

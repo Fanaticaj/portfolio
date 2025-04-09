@@ -5,6 +5,8 @@ import ProjectsSection from "../components/ProjectsSection";
 import ExperienceSection from "../components/ExperienceSection";
 import EducationSection from "../components/EducationSection";
 import SkillsSection from "../components/SkillsSection";
+import Hero from "../components/Hero";
+import AboutSection from "../components/AboutSection";
 
 const Who = () => {
   return (
@@ -14,28 +16,8 @@ const Who = () => {
         {/* Information Card */}
         <div className="w-full">
           <Card className="border border-gray-700 bg-gray-800 shadow-lg">
-            <div className="flex w-full justify-center">
-              <img
-                src="../photo.jpg"
-                alt="Anthony Grippi"
-                className="h-64 w-64 rounded-full border-4 border-blue-400 object-cover shadow-lg"
-              />
-            </div>
-            <h2 className="text-center text-3xl font-bold text-blue-400">
-              Anthony Grippi
-            </h2>
-            <p className="text-center text-gray-400">
-              Computer Science Scholar | Cybersecurity Enthusiast
-            </p>
-            <section className="mb-6">
-              <h3 className="text-xl font-semibold text-blue-300">About Me</h3>
-              <p className="text-gray-300">
-                I am a passionate Computer Science student with a concentration
-                in Cybersecurity. I thrive in fast-paced, challenging
-                environments and enjoy developing innovative solutions in
-                software engineering and IT security.
-              </p>
-            </section>
+            <Hero />
+            <AboutSection />
             <ExperienceSection />
             <EducationSection />
             <SkillsSection />

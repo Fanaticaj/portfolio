@@ -17,8 +17,8 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section className="mb-6">
-      <h3 className="text-xl font-semibold text-blue-300 mb-4">Skills</h3>
+    <section>
+      <h3 className="text-xl font-semibold text-blue-300">Skills</h3>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group) => (
           <SkillItem

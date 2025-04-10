@@ -4,15 +4,15 @@ const SkillsSection = () => {
   const skillGroups = [
     {
       category: "Programming Languages",
-      skills: ["C++", "Java", "JavaScript", "Python"],
+      skills: ["C++", "Java", "JavaScript", "Python", "TypeScript", "C#"],
     },
     {
       category: "Platforms & Tools",
-      skills: ["Dynamics 365", "Unreal Engine 4", "Flowbite", "Power Platform"],
+      skills: ["Dynamics 365", "Unreal Engine 4", "Flowbite", "Power Platform", "Git", "Postman", "Docker"],
     },
     {
       category: "Cybersecurity",
-      skills: ["CTF Challenges", "IT Security", "Authentication Systems"],
+      skills: ["CTF Challenges", "Authentication Systems", "Burpsuite", "Nmap", "Metasploit", "Wireshark", "GNS3"]
     },
   ];
 

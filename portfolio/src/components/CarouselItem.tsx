@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 export interface CarouselItemProps {
   Comp: React.ReactNode;
-  to: string; // Path to navigate
+  to: string;
 }
 
 const CarouselItem = ({ Comp, to }: CarouselItemProps) => {
   return (
-    <Link to={to} className="block w-full h-full cursor-pointer">
-      <div className="overflow-y-auto max-h-full">
+    <Link to={to} className="cursor-pointer">
+      <div>
         {Comp}
       </div>
     </Link>

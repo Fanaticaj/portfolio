@@ -11,7 +11,7 @@ const Why: React.FC = () => {
       <GradientBackground />
 
       {/* Main Content */}
-      <main className="relative z-10 flex h-full flex-col items-center justify-center space-y-6 text-center">
+      <main className="relative z-10 flex h-full flex-col items-center space-y-6">
 
         {/* Header */}
         <header className="font-sans">

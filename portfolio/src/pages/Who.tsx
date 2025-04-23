@@ -7,14 +7,16 @@ import EducationSection from "../components/EducationSection";
 import SkillsSection from "../components/SkillsSection";
 import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
+import PageTitle from "../components/PageTitle";
 
 const Who = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-y-auto bg-gray-900 text-white">
       <GradientBackground />
-      <div className="container mx-auto flex flex-col items-center gap-8 px-6 py-12 md:flex-row">
+      <div className="container mx-auto flex flex-col items-center md:flex-row">
         <div className="w-full">
-          <Card className="border border-gray-700 bg-gray-800 shadow-lg">
+        <PageTitle title="Who I Am" />
+          <Card className="border border-gray-700 bg-gray-800 shadow-lg m-5">
             <Hero />
             <AboutSection />
             <ExperienceSection />

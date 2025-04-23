@@ -3,6 +3,7 @@
 import { Carousel } from "flowbite-react";
 import CarouselItem from "./CarouselItem";
 import Who from '../pages/Who';
+import What from '../pages/What';
 
 export function SlideShow() {
   return (
@@ -11,10 +12,10 @@ export function SlideShow() {
       <div className="overflow-y-auto max-h-[35rem]">
         <CarouselItem Comp={<Who />} to="/who" />
         </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 2
+        <div className="overflow-y-auto max-h-[35rem]">
+        <CarouselItem Comp={<What />} to="/what" />
         </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+        <div className="overflow-y-auto max-h-[35rem]">
           Slide 3
         </div>
       </Carousel>

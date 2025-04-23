@@ -10,16 +10,16 @@ export function FooterNav() {
       <Navbar.Toggle />
       <Navbar.Collapse>
         <Navbar.Link active={location.pathname === "/"}>
-          <Link to="/">Why</Link>
+          <Link to="/" className="text-white">Why</Link>
         </Navbar.Link>
         <Navbar.Link active={location.pathname === "/who"}>
-          <Link to="/who">Who</Link>
+          <Link to="/who" className="text-white">Who</Link >
         </Navbar.Link>
         <Navbar.Link active={location.pathname === "/what"}>
-          <Link to="/what">What</Link>
+          <Link to="/what" className="text-white">What</Link>
         </Navbar.Link>
         <Navbar.Link active={location.pathname === "/where"}>
-          <Link to="/where">Where</Link>
+          <Link to="/where" className="text-white">Where</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

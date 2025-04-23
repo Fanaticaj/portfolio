@@ -1,6 +1,7 @@
 import GradientBackground from "../components/GradientBackground";
 import SlideShow from "../components/SlideShow";
 import FooterNav from "../components/FooterNav";
+import PageTitle from "../components/PageTitle";
 
 
 const Why: React.FC = () => {
@@ -18,12 +19,10 @@ const Why: React.FC = () => {
           <h1 className="text-5xl font-semibold uppercase text-white">
             Anthony Grippi
           </h1>
-          <span className="font-mono text-sm font-extralight lowercase italic text-gray-500">
+          <span className="font-mono text-sm font-extralight lowercase italic text-gray-500 justify-center flex items-center">
             dev, architect, security aficionado
           </span>
-          <h2 className="text-5xl font-light text-gray-300 italic uppercase">
-            Why You're Here
-          </h2>
+          <PageTitle title="Why You're Here" />
         </header>
 
         {/* Carousel Section */}

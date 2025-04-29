@@ -2,6 +2,8 @@ import { Card } from "flowbite-react";
 import GradientBackground from "../components/GradientBackground";
 import FooterNav from "../components/FooterNav";
 import PageTitle from "../components/PageTitle";
+import ProjectsSection from "../components/ProjectsSection";
+
 
 const What = () => {
   return (
@@ -11,6 +13,7 @@ const What = () => {
         <div className="w-full">
         <PageTitle title="What I've done" />
           <Card className="border border-gray-700 bg-gray-800 shadow-lg m-5">
+            <ProjectsSection />
           </Card>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Navbar } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
 
 export function FooterNav() {
-  const location = useLocation(); // Get the current URL path
+  const location = useLocation();
 
   return (
     <Navbar fluid rounded className="bg-gray-800 text-white z-50">

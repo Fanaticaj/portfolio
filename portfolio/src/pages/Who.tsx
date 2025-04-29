@@ -1,9 +1,6 @@
 import { Card } from "flowbite-react";
 import GradientBackground from "../components/GradientBackground";
 import FooterNav from "../components/FooterNav";
-import ProjectsSection from "../components/ProjectsSection";
-import ExperienceSection from "../components/ExperienceSection";
-import EducationSection from "../components/EducationSection";
 import SkillsSection from "../components/SkillsSection";
 import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
@@ -19,10 +16,7 @@ const Who = () => {
           <Card className="border border-gray-700 bg-gray-800 shadow-lg m-5">
             <Hero />
             <AboutSection />
-            <ExperienceSection />
-            <EducationSection />
             <SkillsSection />
-            <ProjectsSection />
           </Card>
         </div>
       </div>

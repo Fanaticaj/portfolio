@@ -4,6 +4,7 @@ import { Carousel } from "flowbite-react";
 import CarouselItem from "./CarouselItem";
 import Who from '../pages/Who';
 import What from '../pages/What';
+import Where from '../pages/Where';
 
 export function SlideShow() {
   return (
@@ -16,7 +17,7 @@ export function SlideShow() {
         <CarouselItem Comp={<What />} to="/what" />
         </div>
         <div className="overflow-y-auto max-h-[35rem]">
-          Slide 3
+        <CarouselItem Comp={<Where />} to="/where" />
         </div>
       </Carousel>
     </div>

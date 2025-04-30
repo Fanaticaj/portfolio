@@ -6,7 +6,7 @@ import PageTitle from "../components/PageTitle";
 
 const Why: React.FC = () => {
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-gray-900">
+    <div className="relative h-screen w-screen overflow-auto bg-gray-900">
       
       {/* Background and Interactive Effects */}
       <GradientBackground />

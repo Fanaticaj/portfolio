@@ -13,7 +13,7 @@ import { useRef, useState } from "react";
 
 export function ContactMe() {
   const [openModal, setOpenModal] = useState(false);
-  const emailInputRef = useRef<HTMLInputElement>(null);
+  const emailInputRef = useRef<HTMLTextAreaElement>(null);
 
   return (
     <>
@@ -27,8 +27,8 @@ export function ContactMe() {
       >
         <ModalHeader className="bg-gray-700" />
         <ModalBody className="bg-gray-700">
-          <div className="space-y-5 bg-gray-700">
-            <h3 className="flex items-center justify-center text-4xl font-light uppercase italic text-gray-300">
+          <div className="space-y-2 bg-gray-700">
+            <h3 className="mt-2 flex items-center justify-center text-3xl font-light uppercase italic text-gray-300">
               Say Hi!
             </h3>
             <div>
@@ -40,12 +40,13 @@ export function ContactMe() {
                   Your email
                 </Label>
               </div>
-              <TextInput
-                className="bg-gray-800 text-gray-300"
+              <Textarea
                 id="email"
                 ref={emailInputRef}
                 placeholder="name@company.com"
                 required
+                rows={1}
+                className="resize-none bg-gray-800 text-gray-300"
               />
             </div>
             <div>
@@ -55,7 +56,7 @@ export function ContactMe() {
                 </Label>
               </div>
               <Textarea
-                id="textInput"
+                id="description"
                 placeholder="Wow Anthony, great porfolio."
                 rows={5}
                 className="bg-gray-800 text-gray-300"

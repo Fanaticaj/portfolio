@@ -3,6 +3,7 @@ import SlideShow from "../components/SlideShow";
 import FooterNav from "../components/FooterNav";
 import PageTitle from "../components/PageTitle";
 import { ContactMe } from "../components/ContactMe";
+import { Button } from "flowbite-react";
 
 const Why: React.FC = () => {
   return (
@@ -31,6 +32,11 @@ const Why: React.FC = () => {
 
         <span className="flex items-center justify-center font-mono text-sm font-extralight lowercase italic text-gray-500">
           <ContactMe />
+        </span>
+        <span className="flex items-center justify-center font-mono text-sm font-extralight lowercase italic text-gray-500">
+          <a href="/resume.pdf" download>
+            <Button>Download My Resume!</Button>
+          </a>
         </span>
       </main>
 

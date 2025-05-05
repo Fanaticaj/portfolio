@@ -22,7 +22,7 @@ const ProjectModalContent = ({
   images,
 }: ProjectModalContentProps) => {
   return (
-    <Modal show={open} onClose={onClose} size="2xl" popup>
+    <Modal show={open} onClose={onClose} size="7xl" popup>
       <div className="relative rounded-lg border border-gray-700 bg-gray-800 shadow-lg">
         {/* Header */}
         <div className="flex items-center justify-between rounded-t border-b border-gray-700 p-4 md:p-5">

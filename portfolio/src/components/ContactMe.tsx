@@ -17,7 +17,9 @@ export function ContactMe() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Contact Me</Button>
+      <Button color="gray" onClick={() => setOpenModal(true)}>
+        Contact Me
+      </Button>
       <Modal
         show={openModal}
         size="sm"

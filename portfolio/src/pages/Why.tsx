@@ -35,7 +35,7 @@ const Why: React.FC = () => {
         </span>
         <span className="flex items-center justify-center font-mono text-sm font-extralight lowercase italic text-gray-500">
           <a href="/Resume.pdf" download>
-            <Button>Download My Resume!</Button>
+            <Button color="gray">Download My Resume!</Button>
           </a>
         </span>
       </main>

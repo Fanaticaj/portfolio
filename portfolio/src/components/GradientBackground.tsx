@@ -26,7 +26,7 @@ const GradientBackground: React.FC = () => {
   return (
     <div
       ref={gradientRef}
-      className="absolute inset-0 transition-all duration-200"
+      className="pointer-events-none absolute inset-0 transition-all duration-200"
       style={{
         background:
           "radial-gradient(circle at center, rgba(59, 56, 59, 0.2), rgba(62, 56, 70, 0.2), rgba(0, 0, 0, 0.2))",

@@ -8,11 +8,28 @@ const SkillsSection = () => {
     },
     {
       category: "Platforms & Tools",
-      skills: ["Dynamics 365", "Unreal Engine 4", "Flowbite", "Power Platform", "Git", "Postman", "Docker"],
+      skills: [
+        "Dynamics 365",
+        "Unreal Engine 4",
+        "Power Platform",
+        "Git",
+        "Postman",
+        "Docker",
+        "AWS",
+        "Azure",
+      ],
     },
     {
       category: "Cybersecurity",
-      skills: ["CTF Challenges", "Authentication Systems", "Burpsuite", "Nmap", "Metasploit", "Wireshark", "GNS3"]
+      skills: [
+        "CTF Challenges",
+        "Authentication Systems",
+        "Burpsuite",
+        "Nmap",
+        "Metasploit",
+        "Wireshark",
+        "GNS3",
+      ],
     },
   ];
 

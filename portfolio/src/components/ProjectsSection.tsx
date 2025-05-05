@@ -104,21 +104,13 @@ const ProjectsSection = () => {
         ))}
       </Timeline>
 
-      <Modal
-        show={selectedProject !== null}
+      <ProjectModalContent
+        open={selectedProject !== null}
         onClose={() => setSelectedProject(null)}
-      >
-        {selectedProject && (
-          <>
-            <ModalHeader className="bg-gray-800 text-white">
-              {selectedProject.title} – Details
-            </ModalHeader>
-            <ModalBody className="bg-gray-900">
-              <ProjectModalContent {...selectedProject.modal} />
-            </ModalBody>
-          </>
-        )}
-      </Modal>
+        title={selectedProject?.title ?? ""}
+        sections={selectedProject?.modal?.sections ?? []}
+        images={selectedProject?.modal?.images ?? []}
+      />
     </section>
   );
 };

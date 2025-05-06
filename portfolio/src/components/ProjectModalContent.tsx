@@ -1,10 +1,4 @@
-import {
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
-  Button,
-} from "flowbite-react";
+import { Modal, ModalBody, ModalFooter, Button } from "flowbite-react";
 
 type ProjectModalContentProps = {
   open: boolean;

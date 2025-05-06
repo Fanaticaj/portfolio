@@ -8,7 +8,6 @@ const Hero = () => {
             alt="Anthony Grippi"
             className="h-full w-full rounded-full object-cover"
           />
-          {/* Glitch overlay */}
           <div className=" absolute inset-0 animate-glitch rounded-full" />
         </div>
       </div>

@@ -12,8 +12,8 @@ const Who = () => {
       <GradientBackground />
       <div className="container mx-auto flex flex-col items-center md:flex-row">
         <div className="w-full">
-        <PageTitle title="Who I Am" />
-          <Card className="border border-gray-700 bg-gray-800 shadow-lg m-5">
+          <PageTitle title="Who I Am" />
+          <Card className="m-5 border border-gray-700 bg-gray-800 shadow-lg">
             <Hero />
             <AboutSection />
             <SkillsSection />

@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       time: "April 2025",
       description:
         "A work-in-progress trading hub for Palworld that aims to centralize listings, simplify item discovery, and connect players with streamlined trade mechanics. Built with scalability in mind, it lays the groundwork for a dedicated marketplace tailored to the Palworld community.",
-      link: "https://github.com/Fanaticaj/PalTrade-Hub",
+      link: "https://github.com/yoshinoashton/cpsc362-project",
       modal: {
         sections: [
           {
@@ -56,12 +56,12 @@ const ProjectsSection = () => {
         sections: [
           {
             heading: "Overview",
-            text: "This FTP system was designed from scratch to provide basic file transfer capabilities in a controlled environment. It includes both server-side and client-side components with support for upload, download, and directory navigation.",
+            text: `This project implements a custom-built FTP server and client system using Python socket programming. It recreates core FTP functionality—such as listing files (LS), downloading (GET), uploading (PUT), and session termination (QUIT)—using a simple two-socket protocol. The architecture mirrors traditional FTP structure with a dedicated control connection and a separate data connection. This design not only reinforces an understanding of TCP/IP socket communication but also emphasizes hands-on protocol implementation, allowing single-client interactions to be managed reliably across discrete channels.`,
           },
           {
             heading: "Technical Details",
-            text: "Implemented using Python's `socket` and `os` modules, it supports multi-threaded connections, encrypted logins, and basic command-line interface controls for managing file operations.",
-          },
+            text: `The server listens on a configurable control port and initiates separate data transfers over a hardcoded data port. It processes client commands through a synchronous loop and handles file transfers using a custom protocol that prepends metadata (filename and file size) to the data stream. The client manages user input, validates file existence during PUT, and interprets server responses via a dual-socket setup. Both sides leverage a recvAll utility to handle TCP fragmentation and ensure reliable transmission. Although limited to one client and using an intentionally constrained buffer size for learning purposes, the system demonstrates real-world networking concepts such as port reuse (SO_REUSEADDR), socket blocking behavior, and structured file chunking.`,
+          }
         ],
         images: ["/images/ftp-1.png", "/images/ftp-2.png"],
       },

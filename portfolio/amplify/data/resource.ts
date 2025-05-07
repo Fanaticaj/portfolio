@@ -1,23 +1,19 @@
-// amplify/data/resource.ts
 import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
-import { sayHello } from "../functions/send-sns/resource";
 
 const schema = a.schema({
-  sayHello: a
-    .query()
-    .arguments({
-      name: a.string(),
+  ContactRequests: a
+    .model({
+      email: a.string(),
+      content: a.string(),
     })
-    .returns(a.string())
-    .authorization((allow) => [allow.guest()])
-    .handler(a.handler.function(sayHello)),
+    .authorization((allow) => [allow.authenticated()]), // or add allow.apiKey() here if needed
+});
+
+export const data = defineData({
+  schema, // ✅ This now has a value
+  authorizationModes: {
+    defaultAuthorizationMode: "userPool", // 🔄 Switch this from "apiKey" to "userPool"
+  },
 });
 
 export type Schema = ClientSchema<typeof schema>;
-
-export const data = defineData({
-  schema,
-  authorizationModes: {
-    defaultAuthorizationMode: "iam",
-  },
-});

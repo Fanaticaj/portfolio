@@ -1,8 +1,8 @@
 import { defineBackend } from '@aws-amplify/backend';
-import { sayHello } from './functions/send-sns/resource';
-import { data } from './data/resource';
+import { data } from './data/resource.js';
+import { storage } from './storage/resource';
 
-export const backend = defineBackend({
-  sayHello,
+defineBackend({
   data,
+  storage
 });

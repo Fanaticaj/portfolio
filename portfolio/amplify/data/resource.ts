@@ -10,9 +10,9 @@ const schema = a.schema({
 });
 
 export const data = defineData({
-  schema, // ✅ This now has a value
+  schema,
   authorizationModes: {
-    defaultAuthorizationMode: "userPool", // 🔄 Switch this from "apiKey" to "userPool"
+    defaultAuthorizationMode: "apiKey",
   },
 });
 

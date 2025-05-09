@@ -23,7 +23,10 @@ const ProjectsSection = () => {
             text: "RTDE is developed using Next.js with the App Router architecture, providing a robust and efficient frontend framework. AWS Amplify is utilized to handle backend services, including authentication, API routes, and data storage, ensuring a serverless and scalable infrastructure. The project structure includes modular components for ease of maintenance and scalability. Real-time synchronization is achieved through AWS Amplify's DataStore or GraphQL subscriptions, ensuring that all users have the most up-to-date view of the document. The application also incorporates best practices for security and performance optimization.",
           },
         ],
-        images: ["/images/rtde-1.png", "/images/rtde-2.png"],
+        images: [
+          "../../public/projects/rtde-1.png",
+          "../../public/projects/rtde-2.png",
+        ],
       },
     },
 
@@ -44,7 +47,10 @@ const ProjectsSection = () => {
             text: "This project is written entirely in Python and organized into modular components, each responsible for a core aspect of the trading strategy. It leverages the official Path of Exile 2 trade API to execute complex item searches (`poe2_api.py`), applies custom stat simulations using rule-based calculations (`calculations.py`), and performs automated evaluations via filters (`itemfilter.py`) that compare modified gear against predefined thresholds. The CLI interface allows users to run tailored queries and respond in real time to recommended purchases. The app also features recursive query refinement to intelligently handle large result sets, handles rate limits gracefully, and even supports automated purchase initiation through in-game whisper token execution. Configuration is securely handled using environment variables, keeping sensitive tokens like POESESSID safe from public exposure.",
           },
         ],
-        images: ["/images/poe2-1.png", "/images/poe2-2.png"],
+        images: [
+          "../../public/projects/poe2-1.png",
+          "../../public/projects/poe2-2.png",
+        ],
       },
     },
     {
@@ -64,7 +70,10 @@ const ProjectsSection = () => {
             text: "Developed in Python, the project utilizes NumPy for numerical computations and Matplotlib for data visualization. The AI agent employs the Q-Learning algorithm, maintaining a Q-table to estimate the value of state-action pairs. An ε-greedy policy balances exploration and exploitation during training. The environment simulates Blackjack games, providing feedback in the form of rewards, which the agent uses to update its Q-values. Visualizations include plots of win/loss ratios over time and convergence patterns of the Q-values, offering insights into the learning process and the effectiveness of the derived strategies.",
           },
         ],
-        images: ["/images/blackjack-1.png", "/images/blackjack-2.png"],
+        images: [
+          "../../public/projects/bjai-1.png",
+          "../../public/projects/bjai-2.png",
+        ],
       },
     },
     {
@@ -83,30 +92,33 @@ const ProjectsSection = () => {
             heading: "Technical Details",
             text: "Implemented in Python, the compiler leverages several modules to achieve its functionality. The 'lexer.py' module performs lexical analysis, converting source code into a stream of tokens. 'rdp.py' handles syntax analysis through recursive descent parsing, ensuring the code adheres to the grammatical rules of RAT24S. The 'sym_table.py' module manages the symbol table, keeping track of identifiers and their attributes. Additional modules like 'fsm.py' and 'utils.py' support finite state machine design and utility functions, respectively. The compiler is designed with modularity in mind, allowing for easy maintenance and potential future enhancements.",
           },
+        ],
+        //images: [
+        //"../../public/projects/pal-1.png",
+        // "../../public/projects/pal-2.png",
+        //],
+      },
+    },
+    {
+      title: "PalTrade-Hub",
+      time: "March 2024",
+      description:
+        "A work-in-progress trading hub for Palworld that aims to centralize listings, simplify item discovery, and connect players with streamlined trade mechanics. Built with scalability in mind, it lays the groundwork for a dedicated marketplace tailored to the Palworld community.",
+      link: "https://github.com/yoshinoashton/cpsc362-project",
+      modal: {
+        sections: [
           {
-            title: "PalTrade-Hub",
-            time: "March 2024",
-            description:
-              "A work-in-progress trading hub for Palworld that aims to centralize listings, simplify item discovery, and connect players with streamlined trade mechanics. Built with scalability in mind, it lays the groundwork for a dedicated marketplace tailored to the Palworld community.",
-            link: "https://github.com/yoshinoashton/cpsc362-project",
-            modal: {
-              sections: [
-                {
-                  heading: "Overview",
-                  text: "PalTrade-Hub is an innovative online platform inspired by the engaging gameplay of Palworld and the convenience of Facebook Marketplace. Designed to facilitate the trading and selling of Palworld creatures, items, and related goods, PalTrade-Hub aims to create a vibrant community for players and enthusiasts. With an intuitive interface and user-friendly features, it serves as a central hub for all Palworld trading activities, offering a secure and organized space for transactions.",
-                },
-                {
-                  heading: "Technical Details",
-                  text: "The frontend of PalTrade-Hub is developed using React, TypeScript, and Tailwind CSS, ensuring a responsive and modern user interface. The backend is structured with Node.js and MongoDB, providing a robust and scalable foundation for handling user data, listings, and transactions. The application architecture emphasizes modularity, facilitating future integrations with official game APIs and third-party services. Key features include user authentication, real-time listing updates, and comprehensive filtering options to enhance user experience and engagement.",
-                },
-              ],
-              images: ["/images/palhub-1.png", "/images/palhub-2.png"],
-            },
+            heading: "Overview",
+            text: "PalTrade-Hub is an innovative online platform inspired by the engaging gameplay of Palworld and the convenience of Facebook Marketplace. Designed to facilitate the trading and selling of Palworld creatures, items, and related goods, PalTrade-Hub aims to create a vibrant community for players and enthusiasts. With an intuitive interface and user-friendly features, it serves as a central hub for all Palworld trading activities, offering a secure and organized space for transactions.",
+          },
+          {
+            heading: "Technical Details",
+            text: "The frontend of PalTrade-Hub is developed using React, TypeScript, and Tailwind CSS, ensuring a responsive and modern user interface. The backend is structured with Node.js and MongoDB, providing a robust and scalable foundation for handling user data, listings, and transactions. The application architecture emphasizes modularity, facilitating future integrations with official game APIs and third-party services. Key features include user authentication, real-time listing updates, and comprehensive filtering options to enhance user experience and engagement.",
           },
         ],
         images: [
-          "/images/rat24s-compiler-1.png",
-          "/images/rat24s-compiler-2.png",
+          "../../public/projects/pal-1.png",
+          "../../public/projects/pal-2.png",
         ],
       },
     },
@@ -127,7 +139,7 @@ const ProjectsSection = () => {
             text: `The server listens on a configurable control port and initiates separate data transfers over a hardcoded data port. It processes client commands through a synchronous loop and handles file transfers using a custom protocol that prepends metadata (filename and file size) to the data stream. The client manages user input, validates file existence during PUT, and interprets server responses via a dual-socket setup. Both sides leverage a recvAll utility to handle TCP fragmentation and ensure reliable transmission. Although limited to one client and using an intentionally constrained buffer size for learning purposes, the system demonstrates real-world networking concepts such as port reuse (SO_REUSEADDR), socket blocking behavior, and structured file chunking.`,
           },
         ],
-        images: ["/images/ftp-1.png", "/images/ftp-2.png"],
+        //images: ["/images/ftp-1.png", "/images/ftp-2.png"],
       },
     },
   ];

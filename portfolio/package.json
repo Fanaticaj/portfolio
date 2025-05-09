@@ -14,23 +14,18 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "aws-amplify": "^6.14.4",
     "flowbite-react": "^0.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.3.0"
   },
   "devDependencies": {
-    "@aws-amplify/backend": "^1.16.1",
-    "@aws-amplify/backend-cli": "^1.7.1",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
-    "aws-cdk-lib": "^2.189.1",
-    "constructs": "^10.4.2",
     "esbuild": "^0.25.4",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",

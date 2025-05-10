@@ -23,10 +23,7 @@ const ProjectsSection = () => {
             text: "RTDE is developed using Next.js with the App Router architecture, providing a robust and efficient frontend framework. AWS Amplify is utilized to handle backend services, including authentication, API routes, and data storage, ensuring a serverless and scalable infrastructure. The project structure includes modular components for ease of maintenance and scalability. Real-time synchronization is achieved through AWS Amplify's DataStore or GraphQL subscriptions, ensuring that all users have the most up-to-date view of the document. The application also incorporates best practices for security and performance optimization.",
           },
         ],
-        images: [
-          "../../public/projects/rtde-1.png",
-          "../../public/projects/rtde-2.png",
-        ],
+        images: ["/projects/rtde-1.png", "/projects/rtde-2.png"],
       },
     },
 
@@ -47,10 +44,7 @@ const ProjectsSection = () => {
             text: "This project is written entirely in Python and organized into modular components, each responsible for a core aspect of the trading strategy. It leverages the official Path of Exile 2 trade API to execute complex item searches (`poe2_api.py`), applies custom stat simulations using rule-based calculations (`calculations.py`), and performs automated evaluations via filters (`itemfilter.py`) that compare modified gear against predefined thresholds. The CLI interface allows users to run tailored queries and respond in real time to recommended purchases. The app also features recursive query refinement to intelligently handle large result sets, handles rate limits gracefully, and even supports automated purchase initiation through in-game whisper token execution. Configuration is securely handled using environment variables, keeping sensitive tokens like POESESSID safe from public exposure.",
           },
         ],
-        images: [
-          "../../public/projects/poe2-1.png",
-          "../../public/projects/poe2-2.png",
-        ],
+        images: ["/projects/poe2-1.png", "/projects/poe2-2.png"],
       },
     },
     {
@@ -70,10 +64,7 @@ const ProjectsSection = () => {
             text: "Developed in Python, the project utilizes NumPy for numerical computations and Matplotlib for data visualization. The AI agent employs the Q-Learning algorithm, maintaining a Q-table to estimate the value of state-action pairs. An ε-greedy policy balances exploration and exploitation during training. The environment simulates Blackjack games, providing feedback in the form of rewards, which the agent uses to update its Q-values. Visualizations include plots of win/loss ratios over time and convergence patterns of the Q-values, offering insights into the learning process and the effectiveness of the derived strategies.",
           },
         ],
-        images: [
-          "../../public/projects/bjai-1.png",
-          "../../public/projects/bjai-2.png",
-        ],
+        images: ["/projects/bjai-1.png", "/projects/bjai-2.png"],
       },
     },
     {
@@ -116,10 +107,7 @@ const ProjectsSection = () => {
             text: "The frontend of PalTrade-Hub is developed using React, TypeScript, and Tailwind CSS, ensuring a responsive and modern user interface. The backend is structured with Node.js and MongoDB, providing a robust and scalable foundation for handling user data, listings, and transactions. The application architecture emphasizes modularity, facilitating future integrations with official game APIs and third-party services. Key features include user authentication, real-time listing updates, and comprehensive filtering options to enhance user experience and engagement.",
           },
         ],
-        images: [
-          "../../public/projects/pal-1.png",
-          "../../public/projects/pal-2.png",
-        ],
+        images: ["/projects/pal-1.png", "/projects/pal-2.png"],
       },
     },
     {
